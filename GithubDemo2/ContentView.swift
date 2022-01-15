@@ -56,6 +56,11 @@ struct ContentView: View {
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
         }
+        homeController()
+        
+        func homeController(){
+            print("Welcome to SwiftUI")
+        }
     }
 
     private func deleteItems(offsets: IndexSet) {
